@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:id="@+id/mThanCases">
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="CasesMoreThan"
+            android:textSize="16dp"
+            android:id="@+id/textViewMTCases"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"/>
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_toRightOf="@+id/textViewMTCases"
+            android:id="@+id/editTextMTCases"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lThanCases"
+        android:layout_below="@+id/mThanCases">
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="CasesLessThan"
+            android:textSize="16dp"
+            android:id="@+id/textViewLTCases"
+            android:layout_alignParentStart="true" />
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:id="@+id/editTextLTCases"
+            android:layout_toRightOf="@+id/textViewLTCases"
+            android:layout_toEndOf="@+id/textViewLTCases"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mThanDeaths"
+        android:layout_below="@+id/lThanCases">
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="DeathMoreThan"
+            android:textSize="16dp"
+            android:id="@+id/textViewMTDeaths"
+            android:layout_alignParentStart="true" />
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:id="@+id/editTextMTDeaths"
+            android:layout_toRightOf="@+id/textViewMTDeaths" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mThanDeaths"
+        android:id="@+id/lThanDeaths">
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="DeathsLessThan"
+            android:textSize="16dp"
+            android:id="@+id/textViewLTDeaths"
+            android:layout_alignParentStart="true"/>
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:layout_toRightOf="@+id/textViewLTDeaths"
+            android:id="@+id/editTextLTDeaths"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mThanRecovered"
+        android:layout_below="@+id/lThanDeaths">
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="RecoveredMoreThan"
+            android:textSize="16dp"
+            android:id="@+id/textViewMTRecovered"
+            android:layout_alignParentStart="true" />
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:id="@+id/editTextMTRecovered"
+            android:layout_toRightOf="@+id/textViewMTRecovered"
+            android:layout_toEndOf="@+id/textViewMTRecovered" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lThanRecovered"
+        android:layout_below="@+id/mThanRecovered">
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="RecoveredLessThan"
+            android:textSize="16dp"
+            android:id="@+id/textViewLTRecovered"
+            android:layout_alignParentStart="true" />
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:id="@+id/editTextLTRecovered"
+            android:layout_toRightOf="@+id/textViewLTRecovered"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="50dp"
+        android:text="Submit"
+        android:layout_toRightOf="@+id/buttonCancel"
+        android:layout_below="@+id/lThanRecovered" />
+
+    <Button
+        android:id="@+id/buttonCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/lThanRecovered"
+        android:text="Cancel"
+         />
+
+</RelativeLayout>
